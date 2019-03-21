@@ -1,0 +1,136 @@
+\begin{thebibliography}{19}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[Cadotte et~al.(2012)Cadotte, Mehrkens, and Menge]{RN2189}
+M.~Cadotte, L.~Mehrkens, and D.~Menge.
+\newblock Gauging the impact of meta-analysis on ecology.
+\newblock \emph{Evolutionary Ecology}, 26:\penalty0 1153–67, 2012.
+
+\bibitem[Doebler(2017)]{RN6196}
+P.~Doebler.
+\newblock mada.
+\newblock \emph{CRAN}, page Version 0.5.8, 2017.
+
+\bibitem[Gasparrini(2018)]{RN6198}
+A.~Gasparrini.
+\newblock mvmeta.
+\newblock \emph{CRAN}, page Version 0.4.11, 2018.
+
+\bibitem[Gerstner et~al.(2017)Gerstner, Moreno-Mateos, Gurevitch, Beckmann,
+  Kambach, Jones, and Seppelt]{RN4835}
+K.~Gerstner, D.~Moreno-Mateos, J.~Gurevitch, M.~Beckmann, S.~Kambach, H.~P.
+  Jones, and R.~Seppelt.
+\newblock Will your paper be used in a meta-analysis? make the reach of your
+  research broader and longer lasting.
+\newblock \emph{Methods in Ecology and Evolution}, 8\penalty0 (6):\penalty0
+  777--784, 2017.
+\newblock ISSN 2041-210X.
+\newblock \doi{10.1111/2041-210X.12758}.
+\newblock URL \url{http://dx.doi.org/10.1111/2041-210X.12758}.
+
+\bibitem[Hector(2017)]{RN6087}
+A.~Hector.
+\newblock \emph{The New Statistics with R}.
+\newblock Oxford University Press, Oxford, 2017.
+\newblock ISBN 978-0198729051.
+
+\bibitem[Lai et~al.(2019)Lai, Lortie, Muenchen, Yang, and Ma]{RN6098}
+J.~Lai, C.~J. Lortie, R.~A. Muenchen, J.~Yang, and K.~Ma.
+\newblock Evaluating the popularity of r in ecology.
+\newblock \emph{Ecosphere}, 10\penalty0 (1):\penalty0 e02567, 2019.
+\newblock ISSN 2150-8925.
+\newblock \doi{10.1002/ecs2.2567}.
+\newblock URL \url{https://doi.org/10.1002/ecs2.2567}.
+
+\bibitem[Lortie(2017)]{RN4510}
+C.~Lortie.
+\newblock R for data science.
+\newblock \emph{Journal of Statistical Software}, 77:\penalty0 1--3, 2017.
+\newblock \doi{10.18637/jss.v077.b01}.
+\newblock URL
+  \url{https://www.jstatsoft.org/index.php/jss/article/view/v077b01}.
+
+\bibitem[Lortie(2014)]{RN3216}
+C.~J. Lortie.
+\newblock Formalized synthesis opportunities for ecology: systematic reviews
+  and meta-analyses.
+\newblock \emph{Oikos}, 123:\penalty0 897--902, 2014.
+
+\bibitem[Lortie and Bonte(2016)]{RN3629}
+C.~J. Lortie and D.~Bonte.
+\newblock Zen and the art of ecological synthesis.
+\newblock \emph{Oikos}, 125\penalty0 (3):\penalty0 285--287, 2016.
+\newblock ISSN 1600-0706.
+\newblock \doi{10.1111/oik.03161}.
+\newblock URL \url{http://dx.doi.org/10.1111/oik.03161}.
+
+\bibitem[Lumley(2018)]{RN6195}
+T.~Lumley.
+\newblock rmeta.
+\newblock \emph{CRAN}, page Version 3.0, 2018.
+
+\bibitem[Nakagawa et~al.(2017)Nakagawa, Noble, Senior, and Lagisz]{RN4850}
+S.~Nakagawa, D.~W.~A. Noble, A.~M. Senior, and M.~Lagisz.
+\newblock Meta-evaluation of meta-analysis: ten appraisal questions for
+  biologists.
+\newblock \emph{BMC Biology}, 15\penalty0 (1):\penalty0 18, 2017.
+\newblock ISSN 1741-7007.
+\newblock \doi{10.1186/s12915-017-0357-7}.
+\newblock URL \url{https://doi.org/10.1186/s12915-017-0357-7}.
+
+\bibitem[Polanin et~al.(2016)Polanin, Hennessy, and Tanner-Smith]{RN6178}
+J.~R. Polanin, E.~A. Hennessy, and E.~E. Tanner-Smith.
+\newblock A review of meta-analysis packages in r.
+\newblock \emph{Journal of Educational and Behavioral Statistics}, 42\penalty0
+  (2):\penalty0 206--242, 2016.
+\newblock ISSN 1076-9986.
+\newblock \doi{10.3102/1076998616674315}.
+\newblock URL \url{https://doi.org/10.3102/1076998616674315}.
+
+\bibitem[Rosenberg et~al.(2000)Rosenberg, Adams, and Gurevitch]{RN6194}
+M.~Rosenberg, D.~Adams, and J.~Gurevitch.
+\newblock \emph{MetaWin: Statistical software for meta-analysis. Version 2.0}.
+\newblock 2000.
+
+\bibitem[Rucker et~al.(2019)Rucker, Krahn, Konig, Efthimious, and
+  Schwarzer]{RN6197}
+G.~Rucker, U.~Krahn, J.~Konig, O.~Efthimious, and G.~Schwarzer.
+\newblock netmeta.
+\newblock \emph{CRAN}, 1.0.1:\penalty0 Version 1.0.1, 2019.
+
+\bibitem[Schwarzer(2019)]{RN6176}
+G.~Schwarzer.
+\newblock meta.
+\newblock \emph{CRAN}, page Version 4.94, 2019.
+
+\bibitem[Schwarzer et~al.(2015)Schwarzer, Carpenter, and Rücker]{RN6199}
+G.~Schwarzer, J.~Carpenter, and G.~Rücker.
+\newblock \emph{Meta-Analysis with R}.
+\newblock Springer, Switzerland, 2015.
+\newblock ISBN 978-3-319-21416-0.
+
+\bibitem[Stewart and Schmid(2015)]{RN4861}
+G.~B. Stewart and C.~H. Schmid.
+\newblock Lessons from meta-analysis in ecology and evolution: the need for
+  trans-disciplinary evidence synthesis methodologies.
+\newblock \emph{Research Synthesis Methods}, 6:\penalty0 109--110, 2015.
+\newblock \doi{10.1002/jrsm.1152}.
+\newblock URL \url{https://doi.org/10.1002/jrsm.1152}.
+
+\bibitem[Viechtbauer(2010)]{RN4896}
+W.~Viechtbauer.
+\newblock Conducting meta-analyses in r with the metafor package.
+\newblock \emph{J Stat Software}, 36, 2010.
+\newblock \doi{10.18637/jss.v036.i03}.
+\newblock URL \url{https://doi.org/10.18637/jss.v036.i03}.
+
+\bibitem[Viechtbauer(2017)]{RN6175}
+W.~Viechtbauer.
+\newblock metafor.
+\newblock \emph{CRAN}, page Version 2.0, 2017.
+
+\end{thebibliography}
