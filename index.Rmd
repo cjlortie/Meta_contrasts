@@ -20,6 +20,10 @@ data <- read_csv(url("https://ndownloader.figshare.com/files/14666636"))
 #knitr::kable(data)
 data
 
+ggplot(data, aes(type, fill = package)) +
+  geom_histogram(stat = "count") +
+  scale_fill_brewer(palette = "Set1") +
+  labs(x = "object type", y = "total", fill = "")
 
 ```
 
