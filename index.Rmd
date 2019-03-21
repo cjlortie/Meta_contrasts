@@ -1,0 +1,25 @@
+---
+title: ""
+output: html_document
+---
+
+<br>  
+
+![](./meta.png)  
+<br>
+
+###A contrast of two meta R packages   
+There is extensive support and choice in R to support meta-analyses.  Two common packages in the natural sciences include meta and metafor.  Here, a brief contrast of the strengths of each is described for the synthesis scientist.  Meta is a direct, intuitive choice for rapid implementation of general meta-analytical statistics.  Metafor is a comprehensive package for analyses if the fit models are more complex.  Both packages provide estimates of heterogeneity, excellent visualization tools, and functions to explore publication bias.  Preference and critical outcomes can facilitate choice between these two specific options.  Nonetheless, metafor has a steeper learning curve but greater rewards.
+
+Herein, a quick scrape and analysis of the two R package manuals was done to examine relative complexity of each package. This assumes that every object and function loaded within a package is described in the CRAN manual.
+
+###Data  
+```{r, data, warning=FALSE, message=FALSE}
+library(tidyverse)
+data <- read_csv(url("https://ndownloader.figshare.com/files/14666636"))
+#knitr::kable(data)
+data
+
+
+```
+
