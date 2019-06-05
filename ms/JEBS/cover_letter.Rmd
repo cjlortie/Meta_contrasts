@@ -1,0 +1,19 @@
+---
+title: ""
+output:
+  pdf_document: default
+  html_document: default
+---
+June 5th, 2019
+
+## Cover letter
+### A CONTRAST OF META AND METAFOR PACKAGES FOR META-ANALYSES IN R
+
+Dear Editors,
+
+Meta-analyses are critical scientific synthesis tools.  Their use is increasing exponentially in the natural sciences, and R is a logical (and best choice) to get the statistics done.  In many of these disciplines, two packages dominate the contemporary landscape. A contrast here is provided to guide the synthesist in choosing between these two options. Both excel but in different capacities. This comparison article also highlights the concepts of workflows, semantics, and preference as a set of criteria for R users to consider for any challenge given the incredible volume and range of packages on CRAN.
+
+Warm regards,  
+Christopher Lortie
+
+
