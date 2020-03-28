@@ -17,7 +17,7 @@ PH: 416.736.2100 x20588
 
 
 ### Abstract
-There is extensive choice in R to support meta-analyses.  Two common packages in the natural sciences include meta and metafor.  A brief contrast of the strengths of each is described here for the synthesis scientist.  Meta is a direct, intuitive choice for rapid implementation of general meta-analytical statistics.  Metafor is a comprehensive package for analyses for relatively more complex fit models.  Both packages provide estimates of heterogeneity, excellent visualization tools, and functions to explore publication bias.  Preference and critical outcomes can facilitate choice between these two specific options.  Nonetheless, metafor has a steeper learning curve but greater rewards. 
+There is extensive choice in R to support meta-analyses.  Two common packages used in the sciences include meta and metafor.  A brief contrast of their strengths is described here for the synthesis scientist.  Meta is a direct, intuitive choice for rapid implementation of general meta-analytical statistics.  Metafor is a comprehensive package best suited for relatively more complex models.  Both packages provide estimates of heterogeneity, excellent visualization tools, and functions to explore publication bias.  Preference and critical outcomes can facilitate choice between these two specific options.  Nonetheless, metafor has a steeper learning curve but greater rewards. 
 
 \newpage
 
