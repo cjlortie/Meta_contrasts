@@ -49,7 +49,20 @@ Statistics are sometimes about preferences and thinking styles [@RN6087], and sc
 
 \newpage
 ### Table 1.  
-A contrast of meta and metafor using 
+A contrast of meta and metafor using the critical principles developed in 'A checklist for choosing between R packages in ecology and evolution' [@RN6507].  
+
+```{r table1, message=FALSE, warning=FALSE, echo=FALSE}
+library(tidyverse)
+library(kableExtra)
+
+table1 <- read_csv("table1.csv")
+knitr::kable(table1, "latex", booktabs = TRUE, longtable = TRUE) %>%
+  column_spec(1, width = "1cm") %>%
+  column_spec(2, width = "3cm") %>%
+  column_spec(3, width = "5cm") %>%
+  column_spec(4, width = "5cm") %>%
+  kable_styling(latex_options = c("hold_position", "repeat_header"))
+```
 
 
 \newpage

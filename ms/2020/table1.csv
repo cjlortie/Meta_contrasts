@@ -1,0 +1,13 @@
+item,criteria,meta,metafor
+1,maturity,fourth major version,third major version
+2,active development,"Schwarzer 
+maintains website and GitHub repository","Viechtbauer 
+maintains website and GitHub repository"
+3,recently updated,"Feb 20, 2020","March 19, 2020"
+4,documentation available,reference manual,reference manual and two vignettes
+5,published in similar projects,"widespread use in ecology, evolution, and to a lesser extent the social sciences","widespread use in ecology, evolution, and the social sciences"
+6,license,GPL-2,GPL-2
+7,semantics intuitive,functions to fit meta-analyses corresponds to data type intuitive,fitting meta-analyses logic is similar to GLM fitting in R
+8,functions that get the job done,most major data types have a specific function and there is also a generalized metagen function,requires clear specification in arguments but rma function is a very general yet flexible tool
+9,arguments to support your needs,there is an sm argument for specification of summary measures within meta-analysis functions,extensive breadth in capacity to specify model fitting
+10,dependencies reasonable and reported,"depends on R, and imports include grid, metafor, lme4, and CompQuadForm listed","depends on R, and imports include stats, utils, graphics, grDevices, and nlme"
