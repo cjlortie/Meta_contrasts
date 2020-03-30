@@ -8,7 +8,8 @@ bibliography: references.bib
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-A list of objects included in each package when loaded into the R environment.  
+### A list of objects included in each package when loaded into the R environment.  
+
 ```{r appendix, message=FALSE, warning=FALSE, echo=FALSE}
 library(tidyverse)
 library(kableExtra)

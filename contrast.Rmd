@@ -1,5 +1,5 @@
 ---
-title: ""
+title: "Appendix B"
 output:
   pdf_document: default
   html_document: default
@@ -9,14 +9,14 @@ output:
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-### A contrast of meta and metafor
+### A contrast of analyses done using the R packages meta and metafor.  
 Contrasted meta and metafor using the classic [Cochrane bronchoconstriction dataset]((https://www.cochrane.org/CD001183/AIRWAYS_nedocromil-sodium-for-preventing-exercise-induced-bronchoconstriction)) used in many texts to demonstrate meta-analsysis. [Here is a link to these data as a tidy csv files on figshare.](https://figshare.com/articles/Meta_thinking_data_preventing_exercise-induced_bronchoconstriction/7767020)
 
 #### Meta
 ```{r meta, warning=FALSE, message=FALSE}
 #load primary libraries
 library(tidyverse) #tidy functions to read and format data
-library(meta) #meta package current version
+library(meta) #meta package current version effective March 2020
 
 #Classic bronchoconstriction data from Cochrane
 data <- read_csv(url("https://ndownloader.figshare.com/files/14460386"))
@@ -28,20 +28,26 @@ forest(m1, layout = "JAMA")
 metabias(m1)
 funnel(m1)
 radial(m1)
-
-#cumulative evidence
-forest(metacum(m1, pooled = "random"))
-
 ```
 
+\newpage
 ### Metafor
 ```{r, metafor, warning=FALSE, message=FALSE}
 #load primary libraries
 library(tidyverse) #tidy functions to read and format data
-library(metafor) #metafor package current version
+library(metafor) #metafor package current version effective March 2020
 
 #Classic bronchoconstriction data from Cochrane
 data <- read_csv(url("https://ndownloader.figshare.com/files/14460386"))
+
+#calculate effect sizes
+data <- escalc(measure = "SMD", m1i=Me,m2i=Mc,sd1i=Se,sd2i=Sc,n1i=Ne,n2i=Nc, data=data,var.names=c("SMD","SMD_var"),digits=4) #"SMD" for the standardized mean difference.
+
+#fit model
+#m2 <- rma(yi=SMD, vi=SMD_var, mods = ~study.ID, data = data)
+m2 <- rma.uni(yi=SMD, vi=SMD_var, data = data, method = "REML") #restricted maximum-likelihood estimate
+summary(m2)
+plot(m2)
 
 ```
 
