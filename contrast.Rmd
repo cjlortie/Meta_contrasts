@@ -1,0 +1,47 @@
+---
+title: ""
+output:
+  pdf_document: default
+  html_document: default
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+### A contrast of meta and metafor
+Contrasted meta and metafor using the classic [Cochrane bronchoconstriction dataset]((https://www.cochrane.org/CD001183/AIRWAYS_nedocromil-sodium-for-preventing-exercise-induced-bronchoconstriction)) used in many texts to demonstrate meta-analsysis. [Here is a link to these data as a tidy csv files on figshare.](https://figshare.com/articles/Meta_thinking_data_preventing_exercise-induced_bronchoconstriction/7767020)
+
+#### Meta
+```{r meta, warning=FALSE, message=FALSE}
+#load primary libraries
+library(tidyverse) #tidy functions to read and format data
+library(meta) #meta package current version
+
+#Classic bronchoconstriction data from Cochrane
+data <- read_csv(url("https://ndownloader.figshare.com/files/14460386"))
+
+#continuous data
+m1 <- metacont(Ne, Me, Se, Nc, Mc, Sc, data = data, sm = "SMD")
+summary(m1)
+forest(m1, layout = "JAMA")
+metabias(m1)
+funnel(m1)
+radial(m1)
+
+#cumulative evidence
+forest(metacum(m1, pooled = "random"))
+
+```
+
+### Metafor
+```{r, metafor, warning=FALSE, message=FALSE}
+#load primary libraries
+library(tidyverse) #tidy functions to read and format data
+library(metafor) #metafor package current version
+
+#Classic bronchoconstriction data from Cochrane
+data <- read_csv(url("https://ndownloader.figshare.com/files/14460386"))
+
+```
+

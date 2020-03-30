@@ -64,23 +64,5 @@ knitr::kable(table1, "latex", booktabs = TRUE, longtable = TRUE) %>%
   kable_styling(latex_options = c("hold_position", "repeat_header"))
 ```
 
-
-\newpage
-### Appendix A.  
-A list of objects included in each package when loaded into the R environment.  
-```{r appendix, message=FALSE, warning=FALSE, echo=FALSE}
-library(tidyverse)
-library(kableExtra)
-
-appendix <- read_csv("appendix.csv")
-knitr::kable(appendix, "latex", booktabs = TRUE, longtable = TRUE) %>%
-  column_spec(1, width = "2cm") %>%
-  column_spec(2, width = "4cm") %>%
-  column_spec(3, width = "5cm") %>%
-  column_spec(5, width = "2cm") %>%
-  kable_styling(latex_options = c("hold_position", "repeat_header"))
-```
-
-
 \newpage
 ### Literature cited  
