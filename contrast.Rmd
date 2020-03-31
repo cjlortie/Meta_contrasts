@@ -12,7 +12,7 @@ knitr::opts_chunk$set(echo = TRUE)
 ### A contrast of analyses done using the R packages meta and metafor.  
 Contrasted meta and metafor using the classic [Cochrane bronchoconstriction dataset]((https://www.cochrane.org/CD001183/AIRWAYS_nedocromil-sodium-for-preventing-exercise-induced-bronchoconstriction)) used in many texts to demonstrate meta-analsysis. [Here is a link to these data as a tidy csv files on figshare.](https://figshare.com/articles/Meta_thinking_data_preventing_exercise-induced_bronchoconstriction/7767020)
 
-#### Meta
+### Meta
 ```{r meta, warning=FALSE, message=FALSE}
 #load primary libraries
 library(tidyverse) #tidy functions to read and format data
@@ -24,6 +24,8 @@ data <- read_csv(url("https://ndownloader.figshare.com/files/14460386"))
 #continuous data
 m1 <- metacont(Ne, Me, Se, Nc, Mc, Sc, data = data, sm = "SMD")
 summary(m1)
+
+#viz
 forest(m1, layout = "JAMA")
 metabias(m1)
 funnel(m1)
@@ -47,7 +49,34 @@ data <- escalc(measure = "SMD", m1i=Me,m2i=Mc,sd1i=Se,sd2i=Sc,n1i=Ne,n2i=Nc, dat
 #m2 <- rma(yi=SMD, vi=SMD_var, mods = ~study.ID, data = data)
 m2 <- rma.uni(yi=SMD, vi=SMD_var, data = data, method = "REML") #restricted maximum-likelihood estimate
 summary(m2)
-plot(m2)
 
+#Viz
+plot(m2)
 ```
 
+\newpage
+### Compiled contrasts
+```{r contrasts, warning=FALSE, message=FALSE}
+#compile random model outputs for contrast with metafor
+estimate <- as_data_frame(m1$TE.random)
+se <- as_data_frame(m1$seTE.random)
+zval <- as_data_frame(m1$zval.random)
+pval <- as_data_frame(m1$pval.random)
+ci.lb <- as_data_frame(m1$lower.random)
+ci.ub <- as_data_frame(m1$upper.random)
+m1_tidy <- bind_cols(estimate, se, zval, pval, ci.lb, ci.ub) %>%
+  rename(estimate = value, se = value1, zval = value2, pval = value3, ci.lb = value4, ci.ub = value5)
+
+#compile output into table for contrast with meta
+m2_tidy <- coef(summary(m2))
+#m2_tidy
+
+#compile key outputs
+contrast_tidy <- bind_rows(m1_tidy, m2_tidy) %>%
+  mutate(source = c("meta", "metafor")) %>%
+  select(source, everything())
+
+knitr::kable(contrast_tidy)
+
+
+```
