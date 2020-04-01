@@ -1,0 +1,59 @@
+---
+title: "downloads"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Package use
+### Data
+Grab the data from CRAN.  
+
+```{r data, warning=FALSE, message=FALSE}
+library(tidyverse)
+library(dlstats)
+library(lubridate)
+
+data <- cran_stats(c("meta", "metafor"))
+
+#tidy up
+data <- data %>%
+  mutate(int = interval(ymd(start), ymd(end)), days = time_length(int, "day")) %>%
+  select(days, everything(), -int)
+
+#summary by net totals
+totals <- data %>%
+  group_by(package) %>% 
+  summarise(total_downloads = sum(downloads), total_days = sum(days))
+
+#summary by months
+months <- data %>%
+  mutate(month = month(start)) %>%
+  group_by(month, package) %>% 
+  summarise(total_downloads = sum(downloads), total_days = sum(days))
+
+#write_csv(data, "data/downloads.csv")
+#write_csv(totals, "data/total_downloads.csv")
+
+```
+
+
+### Viz
+Check popularity.  
+
+```{r viz, warning=FALSE, message=FALSE}
+ggplot(data, aes(package, downloads)) +
+  geom_boxplot() +
+  scale_color_brewer(palette = "Set1")
+
+ggplot(months, aes(month, total_downloads, color = package)) +
+  geom_point() +
+  geom_smooth() +
+  scale_color_brewer(palette = "Set1") +
+  scale_x_continuous(limits = c(1, 12), breaks = seq(1,12))
+
+```
+
+
