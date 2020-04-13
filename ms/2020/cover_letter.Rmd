@@ -1,0 +1,20 @@
+---
+title: ""
+output:
+  pdf_document: default
+  html_document: default
+---
+April 13^th^, 2020
+
+### Cover letter
+### A contrast of meta and metafor packages for meta-analyses in R
+
+Dear Editors,
+
+Meta-analyses are critical scientific synthesis tools.  Their use is increasing exponentially in the natural sciences, and R is a frequent and logical choice to get the data processed and statistics done.  In many disciplines including ecology, evolution, and the environmental sciences in particular, two packages dominate the contemporary landscape. A contrast here is provided to guide the computational synthesist in choosing between these two options. Both excel but in different capacities. This contrast further highlights the concepts of workflows, semantics, and preference as a set of criteria for computational biologists to consider for any challenge given the incredible volume and range of packages available on CRAN for R users and in most other computational environments. To expand the breadth, we also include a contrast with Stata because it is an advanced statistical software choice used by some data scientists. It functions here as a benchmark or external check on the capacity for implementation and analysis by these two common R packages. This contribution is a Perspective or Editorial describing computational tool use for biologists. We are confident that it is of wide interest not just to R users or those that use Stata because it demonstrates the capacity for formal contrasts in computational choice to inform needs-driven data solutions in biology.       
+
+
+Best,  
+Christopher Lortie and Alex Filazzola
+
+
