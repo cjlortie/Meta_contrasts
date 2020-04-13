@@ -66,5 +66,11 @@ knitr::kable(table1, "latex", booktabs = TRUE, longtable = TRUE) %>%
   kable_styling(latex_options = c("hold_position", "repeat_header"))
 ```
 
+### Appendix A. A list of objects included in each package when loaded into the R environment.  
+
+### Appendix B. A contrast of analyses done using the R packages meta and metafor.  
+
+### Appendix C. An example of a meta-analysis conducted in Stata 16.  
+
 \newpage
 ### Literature cited  
