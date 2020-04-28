@@ -1,0 +1,23 @@
+---
+title: ""
+output:
+  pdf_document: default
+  html_document: default
+---
+April 28^th^, 2020
+
+### Cover letter
+### A contrast of meta and metafor packages for meta-analyses in R
+
+Dear Editors,
+
+These are challenging times. In addition to health and well-being issues, eeb researchers face limited capacities to do their field and lab research. Many have turned to scientific synthesis including meta-analysis. We provide a short commentary here to facilitate this process, and we are certain that it will be helpful to our community.  If you agree, we would love to get this out there rapidly in whatever format you decide is more appropriate.
+
+
+Meta-analyses are critical scientific synthesis tools.  Their use is increasing exponentially in the ecology and evolution, and R is a frequent and logical choice to get the data processed and statistics done.  In many disciplines including ecology, evolution, and the environmental sciences in particular, two packages dominate the contemporary landscape. A contrast here is provided to guide the synthesist in choosing between these two options. Both excel but in different capacities. To expand the breadth, we also include a contrast with Stata because it is an advanced statistical software choice used by some data scientists. It functions here as a benchmark or external check on the capacity for implementation and analysis by these two common R packages. This contribution is a short commentary describing application and practical computational tools. We are confident that it is of wide interest not just to R users or those that use Stata because it demonstrates the capacity for formal contrasts between different methods (like we do in the field) to inform needs-driven solutions in ecology and evolution.       
+
+
+Best,  
+Christopher Lortie and Alex Filazzola
+
+
