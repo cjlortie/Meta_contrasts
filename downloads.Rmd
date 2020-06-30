@@ -27,6 +27,7 @@ data <- data %>%
 totals <- data %>%
   group_by(package) %>% 
   summarise(total_downloads = sum(downloads), total_days = sum(days))
+totals
 
 #summary by months
 months <- data %>%
